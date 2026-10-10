@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+    <hr>
+
+    <form action="#" method="get">
+
+        <label for="fullname">Full Name:</label><br>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            minlength="2"
+            maxlength="100"
+            required>
+        <br><br>
+
+        <label for="studentid">Student ID:</label><br>
+        <input
+            type="text"
+            id="studentid"
+            name="studentid"
+            placeholder="Enter your student ID"
+            minlength="5"
+            maxlength="20"
+            required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            maxlength="100"
+            required>
+        <br><br>
+
+        <label for="password">Password:</label><br>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="At least 8 characters"
+            minlength="8"
+            maxlength="64"
+            required>
+        <br><br>
+
+        <label for="birthday">Birthday:</label><br>
+        <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            required>
+        <br><br>
+
+        <p>Gender:</p>
+
+        <input type="radio" id="male"
+               name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female"
+               name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other"
+               name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="program">Program:</label><br>
+        <select id="program" name="program" required>
+            <option value="">-- Select Program --</option>
+            <option value="BSIT">
+                Bachelor of Science in Information Technology
+            </option>
+            <option value="BSCS">
+                Bachelor of Science in Computer Science
+            </option>
+            <option value="BSIS">
+                Bachelor of Science in Information Systems
+            </option>
+            <option value="BSEMC">
+                Bachelor of Science in Entertainment and Multimedia Computing
+            </option>
+        </select>
+        <br><br>
+
+        <p>Hobbies:</p>
+
+        <input type="checkbox" id="programming"
+               name="hobbies" value="Programming">
+        <label for="programming">Programming</label><br>
+
+        <input type="checkbox" id="gaming"
+               name="hobbies" value="Gaming">
+        <label for="gaming">Gaming</label><br>
+
+        <input type="checkbox" id="music"
+               name="hobbies" value="Listening to Music">
+        <label for="music">Listening to Music</label><br>
+
+        <input type="checkbox" id="sports"
+               name="hobbies" value="Sports">
+        <label for="sports">Sports</label>
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea
+            id="address"
+            name="address"
+            rows="3"
+            cols="40"
+            placeholder="Enter your complete address"
+            minlength="5"
+            maxlength="200"
+            required></textarea>
+        <br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="40"
+            placeholder="Enter additional comments"
+            maxlength="500"></textarea>
+        <br><br>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+    <hr>
+
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="about.html">ABOUT</a> |
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+</body>
+</html>

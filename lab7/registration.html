@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+    <hr>
+
+    <form action="#" method="post">
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            minlength="2"
+            maxlength="50"
+            required>
+        <br><br>
+
+        <!-- Student ID -->
+        <label for="studentid">Student ID:</label><br>
+        <input
+            type="text"
+            id="studentid"
+            name="studentid"
+            placeholder="Enter your student ID"
+            maxlength="20"
+            required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            minlength="8"
+            maxlength="30"
+            required>
+        <br><br>
+
+        <!-- Birthday -->
+        <label for="birthday">Birthday:</label><br>
+        <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="Male"
+            required>
+        <label for="male">Male</label><br>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="Female">
+        <label for="female">Female</label><br>
+
+        <input
+            type="radio"
+            id="other"
+            name="gender"
+            value="Prefer not to say">
+        <label for="other">Prefer not to say</label>
+        <br><br>
+
+        <!-- Program -->
+        <label for="program">Program:</label><br>
+
+        <select id="program" name="program" required>
+            <option value="">-- Select your program --</option>
+            <option value="BSIT">BS Information Technology</option>
+            <option value="BSCS">BS Computer Science</option>
+            <option value="BSIS">BS Information Systems</option>
+            <option value="BSEMC">BS Entertainment and Multimedia Computing</option>
+        </select>
+        <br><br>
+
+        <!-- Hobbies -->
+        <label>Hobbies:</label><br>
+
+        <input
+            type="checkbox"
+            id="reading"
+            name="hobbies"
+            value="Reading">
+        <label for="reading">Reading</label><br>
+
+        <input
+            type="checkbox"
+            id="gaming"
+            name="hobbies"
+            value="Gaming">
+        <label for="gaming">Gaming</label><br>
+
+        <input
+            type="checkbox"
+            id="music"
+            name="hobbies"
+            value="Listening to Music">
+        <label for="music">Listening to Music</label><br>
+
+        <input
+            type="checkbox"
+            id="sports"
+            name="hobbies"
+            value="Sports">
+        <label for="sports">Sports</label><br>
+
+        <input
+            type="checkbox"
+            id="coding"
+            name="hobbies"
+            value="Coding">
+        <label for="coding">Coding</label>
+        <br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label><br>
+
+        <textarea
+            id="address"
+            name="address"
+            rows="3"
+            cols="40"
+            placeholder="Enter your complete address"
+            minlength="5"
+            maxlength="200"
+            required></textarea>
+        <br><br>
+
+        <!-- Comments -->
+        <label for="comments">Comments:</label><br>
+
+        <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            cols="40"
+            placeholder="Enter your comments (optional)"
+            maxlength="500"></textarea>
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+    <hr>
+
+    <p>Thank you for completing the student registration form!</p>
+
+</body>
+</html>
